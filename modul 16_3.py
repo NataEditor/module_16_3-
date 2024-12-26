@@ -8,7 +8,7 @@ users = {'1': 'Имя: Example, возраст: 18'}
 
 
 @app.get('/users')
-async def get_all_messages() -> str:
+async def get_all_messages() -> dict:
     return users
 
 @app.post('/user/{user_name}/{age}')
